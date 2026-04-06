@@ -11,9 +11,9 @@ SECTIONS {
         "build/asm/*.o"(.bss);
     }
 
-    .COMMON (NOLOAD) : {
-        "build/src/*.o"(COMMON);
-        "build/asm/*.o"(COMMON);
+    .common_data (NOLOAD) : SUBALIGN(4) {
+        "build/src/*.o"(.common_data);
+        "build/asm/*.o"(.common_data);
     }
     
     . = 0x08000000;

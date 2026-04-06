@@ -16,7 +16,7 @@ extern u8 D_03004498;
 extern s32 D_030046a0;
 
 extern void *interrupt_handler_rom;
-extern u32 interrupt_handler[0x200];
+extern u32 interrupt_handler[0x80];
 extern void *interrupt_handler_jtbl_rom;
 extern void *interrupt_handler_jtbl[14];
 extern struct Scene *D_08935fac; // Pointer to Title Screen

@@ -15,8 +15,6 @@ extern char D_08935fc4[]; // "CAL"
 
 /* SAVE/MEMORY */
 
-// struct SaveBuffer* D_030046a8;
-
 // Initiate the size and positions of the save buffer and memory heap.
 void init_ewram(void) {
     u16 ewramStart = 4;

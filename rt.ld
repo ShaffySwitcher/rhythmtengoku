@@ -154,9 +154,8 @@ SECTIONS {
         build/src/lib_0804e564.c.o(.bss);
     }
 
-    .COMMON (NOLOAD) : {
-        build/src/main.c.o(COMMON);
-        build/src/memory.c.o(COMMON);
+    .common_data (NOLOAD) : SUBALIGN(4) {
+        build/src/global.c.o(.common_data);
     }
 
     . = 0x08000000;
