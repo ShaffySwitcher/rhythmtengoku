@@ -10,6 +10,11 @@ SECTIONS {
         "build/src/*.o"(.bss);
         "build/asm/*.o"(.bss);
     }
+
+    .COMMON (NOLOAD) : {
+        "build/src/*.o"(COMMON);
+        "build/asm/*.o"(COMMON);
+    }
     
     . = 0x08000000;
     .cartrom . : AT(__romPos) SUBALIGN(4) {

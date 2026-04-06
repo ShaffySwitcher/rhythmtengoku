@@ -12,6 +12,10 @@ static u8 D_03000080;
 static struct Scene *D_03000084;
 static s32 D_03000088;
 
+/*void *interrupt_handler_jtbl[14];
+u8 D_03004498;
+u32 interrupt_handler[0x200];*/
+
 
 // Default Interrupt Procedure (Do Nothing)
 void interrupt_default(void) {
